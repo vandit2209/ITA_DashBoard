@@ -363,7 +363,7 @@
                     <br>
                     <br>
                     Date of Birth <br>
-                    <input type="date" id="birthday" name="birthday">
+                    <input type="number" name="age">
                     <br><br>
                     <h6>Address</h6>
                     Street Address Line 1<br>
@@ -372,11 +372,12 @@
                     <input type="text" name="addr2" size="50"><br><br>
                     <div style="float: left;">
                         City <br>
-                        <input type="text" name="city" >
-                    </div>
-                    <div style="float: right;margin-right: 100px;">
+                        <!-- <input type="text" name="city" > -->
+                        <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>
                         State<br>
-                        <input type="text" name="state">
+                        
+                        <select id ="state" class="form-control" required></select>
+                        <script language="javascript">print_state("sts");</script>
                     </div>
                     <br>
                     <br>
@@ -452,6 +453,7 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+  <script src="./cities.js"></script>
 
 </body>
 

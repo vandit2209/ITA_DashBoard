@@ -5,10 +5,10 @@
   "main": "angular.min.js",
   "scripts": {
     "start": "node index.js",
-    "dev": " nodemon index.js"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gyan Ranjan",
   "license": "ISC",
   "dependencies": {
     "angular-cookies": "^1.7.9",
