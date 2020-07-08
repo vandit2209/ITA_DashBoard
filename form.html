@@ -15,6 +15,8 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
+    <script src="cities.js"></script>
+
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <style>
@@ -357,7 +359,7 @@
                     <input type="checkbox" value="lungDisease" id="form_in"> Lung Disease<br>
                 </div>
                 
-                <div>
+                <div style="float: left;">
                     <br>
                     <br>
                     <br>
@@ -370,18 +372,10 @@
                     <input type="text" name="addr1"  size="50"><br><br>
                     Street Address Line 2<br>
                     <input type="text" name="addr2" size="50"><br><br>
-                    <div style="float: left;">
-                        City <br>
-                        <!-- <input type="text" name="city" > -->
-                        <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>
-                        State<br>
-                        
-                        <select id ="state" class="form-control" required></select>
-                        <script language="javascript">print_state("sts");</script>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
+                    State <br>
+                    <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select><br>
+                    City <br>
+                    <select id ="state" class="form-control" required></select><br>
                     Phone Number<br>
                     <input type="number" name="contact">
                     <br><br>
@@ -454,6 +448,8 @@
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
   <script src="./cities.js"></script>
+  
+  <script language="javascript">print_state("sts");</script>
 
 </body>
 
